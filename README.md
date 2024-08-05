@@ -14,11 +14,22 @@ COM Object Model for OneNote 2013 in Python
 
 #### How do I setup my environment?
 
-* Install Python 3.4 x86 from [here](https://www.python.org/download/releases/3.4.0/) 
-* Install PyWin32 for Python 3.4 x86 from [here](http://sourceforge.net/projects/pywin32/files/pywin32/) 
-* Add `C:\Python34\` to your PATH variable
-* Run `C:\Python34\Lib\site-packages\win32com\client\makepy.py`
-* Select `Microsoft OneNote 15.0 Extended Type Library`
+Install Pixi from Prefix.dev, and git, then:
+
+```shell
+git clone https://github.com/maphew/one-py.git
+cd one-py
+pixi install
+  # will install python and dependencies for this project
+  # could take awhile if this is first time using pixi
+```
+
+Create python object wrapper for Oneonote DLL with pywin23:
+```shell
+pixi shell
+`.pixi\envs\default\Lib\site-packages\win32com\client\makepy.py`
+  #  Select `Microsoft OneNote 15.0 Extended Type Library`
+```
 
 
 #### How do I submit a new version to the Package Manager?
