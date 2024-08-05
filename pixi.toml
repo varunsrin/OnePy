@@ -1,0 +1,14 @@
+[project]
+name = "one-py"
+version = "0.2.1"
+description = "COM Object Model for OneNote 2013 in Python"
+authors = [" Varun Srinivasan <varunsrin@gmail.com>", "Matt Wilkie <matt.wilkie@yukon.ca>"]
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[tasks]
+
+[dependencies]
+python = ">=3.12.4,<4"
+pywin32 = ">=306,<307"
+pip = ">=24.2,<25"

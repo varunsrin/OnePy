@@ -5,3 +5,8 @@ onepy/__pycache__/
 tests/__pycache__/
 .project
 .pydevproject
+# pixi environments
+.pixi
+*.egg-info
+
+/pixi.lock
